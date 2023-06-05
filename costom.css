@@ -1,0 +1,351 @@
+:root {
+    --main-color: #363636;
+    --sec-pad: 20px 150px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', poppins, sans-serif;
+    width: 100%;
+}
+
+/* navbar */
+.nav {
+    padding: var(--sec-pad);
+}
+
+.logo {
+    width: 50px;
+}
+
+
+.navbar-nav a {
+    margin-left: 30px;
+    color: var(--main-color);
+    font-weight: 300;
+}
+
+.contact-btn {
+    background-color: var(--main-color);
+    border-radius: 20px;
+    color: whitesmoke !important;
+}
+
+/* Main */
+#main {
+    height: 100vh;
+    padding: var(--sec-pad);
+}
+
+.main-pic {
+    position: absolute;
+    top: -150px;
+    right: 10px;
+    z-index: -1;
+}
+
+.hi {
+    padding-top: 70px;
+}
+
+.hi h1 {
+    font-weight: bold;
+}
+
+.work-btn,
+.work-btn-2 {
+    padding: 5px 15px;
+    margin: 30px 0px;
+    background-color: #3F3D56;
+    border-radius: 25px;
+    color: whitesmoke;
+    font-weight: 30;
+    font-size: 1rem;
+}
+
+.main-icons {
+    padding-top: 50px;
+    width: 25px;
+    margin-right: 20px;
+    opacity: 0.7;
+}
+
+/* Thing I do */
+#i-do {
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.left-leave,
+left-leave2 {
+    position: absolute;
+    bottom: 0vh;
+    left: -170px;
+    z-index: -1;
+}
+
+.right-leave {
+    position: absolute;
+    bottom: 0;
+    right: -10vw;
+    transform: rotate(-20deg);
+    width: 250px;
+    z-index: -1;
+}
+
+section #i-do {
+    padding: 0px !important;
+}
+
+.do-para {
+    text-align: justify;
+}
+
+.do-pic {
+    width: 75%;
+}
+
+.end {
+    padding-bottom: 10%;
+}
+
+.line-1,
+.line-2 {
+    position: absolute;
+    width: 50%;
+    z-index: 0;
+}
+
+.line-1 {
+    right: 25vw;
+    top: 50vh;
+}
+
+.line-2 {
+    left: 25vw;
+    top: 125vh;
+}
+
+/* Recent work */
+#recent-work {
+    background-color: #fff;
+}
+
+.project-pic {
+    width: 100%;
+    padding: 5%;
+}
+
+.view-btn {
+    background-color: var(--main-color);
+    border-radius: 20px;
+    color: whitesmoke !important;
+    padding: 10px 25px;
+    margin-top: 15vh;
+}
+
+.view-btn:hover {
+    color: var(--main-color) !important;
+}
+
+/* Contact */
+#contact {
+    position: relative;
+    padding: var(--sec-pad);
+    padding-top: 50vh;
+}
+
+.contact-pic {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    z-index: -1;
+}
+
+
+/* Media Query */
+@media (max-width: 1200px) {
+    .line-2 {
+        left: 25vw;
+        top: 105vh;
+    }
+}
+
+@media (max-width: 991px) {
+    html {
+        width: 100%;
+    }
+
+    #main {
+        color: whitesmoke;
+        height: 70vh;
+    }
+
+    #main,
+    .navbar,
+    #contact {
+        background-color: #54B192;
+        z-index: 2;
+    }
+
+    #contact {
+        color: #fff;
+    }
+
+    .left-leave,
+    .left-leave2 {
+        z-index: 0;
+    }
+
+    .hi,
+    .btn-index {
+        z-index: 1;
+    }
+
+    .hi {
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    .main-pic {
+        width: 65vw;
+        margin: auto;
+        top: 10px;
+        right: 0;
+        z-index: 1;
+    }
+
+    .work-btn,
+    .work-btn-2 {
+        padding: 5px 25px;
+        z-index: 2;
+    }
+
+    #i-do {
+        z-index: 1;
+    }
+
+    .right-leave {
+        right: -20%;
+    }
+
+    #recent-work {
+        z-index: 1;
+    }
+
+    #contact {
+        z-index: -1;
+        padding: 25vh;
+    }
+
+    .contact-pic {
+        width: 65vw;
+        margin: auto;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .relat {
+        position: relative;
+        height: 90vh;
+    }
+
+    .rev-row {
+        position: absolute;
+        width: 70%;
+        padding-top: 30%;
+    }
+
+    .main-pic {
+        top: 25vh;
+        right: 0;
+    }
+
+    .line-1,
+    .line-2 {
+        display: none;
+    }
+
+    .contact-pic {
+        display: none;
+    }
+
+    #contact {
+        z-index: -0;
+        padding: 20vh;
+    }
+
+    .right-leave {
+        right: -25%;
+    }
+}
+
+@media (max-width: 600px) {
+    #main {
+        padding: 0 10%;
+    }
+
+    .main-pic {
+        width: 70vw;
+        bottom: 0;
+        /* display: none; */
+    }
+
+    .left-leave {
+        display: none;
+    }
+
+    .work-btn,
+    .work-btn-2 {
+        margin: 0;
+    }
+
+    #i-do {
+        padding: 15% 8%;
+    }
+
+    .rev-row {
+        position: absolute;
+        width: 70%;
+        padding-top: 50%;
+    }
+
+    .right-leave {
+        right: -32%;
+        transform: rotate(50deg);
+    }
+
+    .work-btn-2 {
+        padding: 5px 30px;
+        margin: 20px auto auto auto;
+    }
+
+    #contact {
+        padding: 15vh;
+    }
+}
+
+@media (max-width: 400px) {
+    .relat {
+        position: relative;
+        height: 70vh;
+    }
+
+    .rev-row {
+        position: absolute;
+        width: 70%;
+        padding-top: 60%;
+    }
+
+    #contact {
+        padding: 10vh 5vh 20vh 5vh;
+    }
+}
